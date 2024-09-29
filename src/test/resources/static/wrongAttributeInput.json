@@ -1,0 +1,190 @@
+{
+  "pageNumber": 1,
+  "pageSize": 20,
+  "housesQuantity": 5,
+  "entities": {
+    "color": ["red", "green", "ivory", "yellow", "blue"],
+    "nationality": ["Englishman", "Ukrainian", "Spaniard", "Norwegian", "Japanese"],
+    "drink": ["tea", "coffee", "milk", "orange juice", "water"],
+    "cigarettes": ["Old Gold", "Kool", "Chesterfield", "Lucky Strike", "Parliament"],
+    "pet": ["dog", "snails", "fox", "horse", "zebra"]
+  },
+  "constraints": [
+    {
+      "attributes": [
+        {
+          "type": "nationality",
+          "name": "Englishman"
+        },
+        {
+          "type": "color",
+          "name": "red"
+        }
+      ],
+      "operator": "SAME"
+    },
+    {
+      "attributes": [
+        {
+          "type": "nationality",
+          "name": "Spaniard"
+        },
+        {
+          "type": "pet",
+          "name": "dog"
+        }
+      ],
+      "operator": "SAME"
+    },
+    {
+      "attributes": [
+        {
+          "type": "drink",
+          "name": "coffee"
+        },
+        {
+          "type": "color",
+          "name": "green"
+        }
+      ],
+      "operator": "SAME"
+    },
+    {
+      "attributes": [
+        {
+          "type": "color",
+          "name": "green"
+        },
+        {
+          "type": "color",
+          "name": "ivory"
+        }
+      ],
+      "operator": "TO_THE_RIGHT"
+    },
+    {
+      "attributes": [
+        {
+          "type": "cigarettes",
+          "name": "Old Gold"
+        },
+        {
+          "type": "pet",
+          "name": "snails"
+        }
+      ],
+      "operator": "SAME"
+    },
+    {
+      "attributes": [
+        {
+          "type": "cigarettes",
+          "name": "Kool"
+        },
+        {
+          "type": "color",
+          "name": "yellow"
+        }
+      ],
+      "operator": "SAME"
+    },
+    {
+      "attributes": [
+        {
+          "type": "drink",
+          "name": "milk"
+        }
+      ],
+      "position": 3,
+      "operator": "POSITION"
+    },
+    {
+      "attributes": [
+        {
+          "type": "nationality",
+          "name": "Norwegian"
+        }
+      ],
+      "position": 1,
+      "operator": "POSITION"
+    },
+    {
+      "attributes": [
+        {
+          "type": "cigarettes",
+          "name": "Chesterfield"
+        },
+        {
+          "type": "pet",
+          "name": "fox"
+        }
+      ],
+      "operator": "NEXT_TO"
+    },
+    {
+      "attributes": [
+        {
+          "type": "cigarettes",
+          "name": "Kool"
+        },
+        {
+          "type": "pet",
+          "name": "Mr. Slave"
+        }
+      ],
+      "operator": "NEXT_TO"
+    },
+    {
+      "attributes": [
+        {
+          "type": "cigarettes",
+          "name": "Lucky Strike"
+        },
+        {
+          "type": "drink",
+          "name": "orange juice"
+        }
+      ],
+      "operator": "SAME"
+    },
+    {
+      "attributes": [
+        {
+          "type": "nationality",
+          "name": "Japanese"
+        },
+        {
+          "type": "cigarettes",
+          "name": "Parliament"
+        }
+      ],
+      "operator": "SAME"
+    },
+    {
+      "attributes": [
+        {
+          "type": "nationality",
+          "name": "Norwegian"
+        },
+        {
+          "type": "color",
+          "name": "blue"
+        }
+      ],
+      "operator": "NEXT_TO"
+    },
+    {
+      "attributes": [
+        {
+          "type": "nationality",
+          "name": "Ukrainian"
+        },
+        {
+          "type": "drink",
+          "name": "tea"
+        }
+      ],
+      "operator": "SAME"
+    }
+  ]
+}
